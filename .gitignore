@@ -41,10 +41,11 @@ data/interim/
 *.xlsx
 *.xls
 
-# Model artefacts - committed selectively
-models/*.pkl
+# Most model files are too large to commit, but the production XGBoost
+# model needs to live in the repo so Streamlit Cloud can load it.
+# Allow xgboost_model.joblib through; exclude any other joblib dumps.
 models/*.joblib
-models/*.bin
+!models/xgboost_model.joblib
 
 # Environment variables
 .env
