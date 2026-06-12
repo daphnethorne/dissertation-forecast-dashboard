@@ -1,0 +1,24 @@
+{
+  "n_validation": 1027,
+  "xgboost": {
+    "rmse": 5.642215884654968,
+    "mae": 3.792578094232318
+  },
+  "baseline_lag1": {
+    "rmse": 5.84223367001971,
+    "mae": 3.487990912041545
+  },
+  "panel_ar": {
+    "rmse": 6.841464141391119,
+    "mae": 4.440602972758177
+  },
+  "feature_importance": {
+    "avg_time_to_pay_lag_1": 0.7295962572097778,
+    "capital_intensity": 0.0778280645608902,
+    "log_total_assets": 0.03823379427194595,
+    "profit_margin": 0.03857443854212761,
+    "leverage": 0.03728407621383667,
+    "net_working_capital": 0.032053954899311066,
+    "debtors_to_turnover": 0.04642941430211067
+  }
+}
