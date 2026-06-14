@@ -42,10 +42,11 @@ data/interim/
 *.xls
 
 # Most model files are too large to commit, but the production XGBoost
-# model needs to live in the repo so Streamlit Cloud can load it.
-# Allow xgboost_model.joblib through; exclude any other joblib dumps.
+# models need to live in the repo so Streamlit Cloud can load them.
+# Allow the regressor and classifier through; exclude any other joblib dumps.
 models/*.joblib
 !models/xgboost_model.joblib
+!models/xgboost_classifier.joblib
 
 # Environment variables
 .env
