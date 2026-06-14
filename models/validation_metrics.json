@@ -20,5 +20,26 @@
     "leverage": 0.03728407621383667,
     "net_working_capital": 0.032053954899311066,
     "debtors_to_turnover": 0.04642941430211067
+  },
+  "classifier": {
+    "n_validation": 1027,
+    "threshold_pct_invoices_late": 50.0,
+    "roc_auc": 0.7807338292775186,
+    "accuracy": 0.7789678675754625,
+    "late_recall": 0.6213592233009708,
+    "late_precision": 0.25396825396825395,
+    "ontime_recall": 0.7965367965367965,
+    "ontime_precision": 0.9496774193548387,
+    "pct_late_in_train": 0.14301381881991665,
+    "pct_late_in_validation": 0.1002921129503408,
+    "feature_importance": {
+      "avg_time_to_pay_lag_1": 0.19853399693965912,
+      "capital_intensity": 0.14237938821315765,
+      "log_total_assets": 0.1451207399368286,
+      "profit_margin": 0.12924210727214813,
+      "leverage": 0.12452489137649536,
+      "net_working_capital": 0.12913687527179718,
+      "debtors_to_turnover": 0.13106201589107513
+    }
   }
 }
